@@ -17,6 +17,6 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy the JAR file from the build stage
-COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/MyanTechAPI-1.0.0.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
